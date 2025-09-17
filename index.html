@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoderHub.run</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/Style-home-header.css">
+    <link rel="stylesheet" href="./css/Style-Aboutus.css">
+    <link rel="stylesheet" href="./css/Style-Services.css">
+    <link rel="stylesheet" href="./css/Style-projects.css">
+    <link rel="stylesheet" href="./css/Style-contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="./img/logo_codehun.png">
+</head>
+
+<body>
+    <div id="intro-screen">
+        <img src="./img/logo_codehun.png" alt="Logo de introducción" class="intro-logo">
+    </div>
+    <canvas id="distortionCanvas"></canvas>
+    <header>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/logo_codehun.png" alt="Logo de CoderHub" width="40" height="40">
+                    CoderHub.Run
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#About-us">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicios">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portafolio">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Home" class="hero-section text-light">
+            <div class="container">
+                <div class="row w-100 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="hero-contsent text-start">
+                            <h1>Casa de desarrollo de software</h1>
+                            <h2 class="mb-4">Somos una marca innovadora</h2>
+                            <p class="lead">Desbloquee los servicios digitales en los que confían 15.000 clientes en
+                                todo el mundo. Somos una agencia digital de servicio completo que genera clientes
+                                potenciales e ingresos para su negocio.</p>
+                            <div class="cta-buttons mt-5 text-start">
+                                <a href="#contacto" class="btn btn-outline-light me-3 custom-btn">CONTACTANOS</a>
+                                <a href="#portafolio" class="btn btn-outline-light custom-btn">PORTAFOLIO</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-center">
+                        <img src="./img/pixel-art-12601.gif" alt="Logo animado" class="animated-logo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="About-us" class="about-us-section py-5">
+            <div class="container py-5">
+                <div class="row d-flex align-items-center justify-content-center mb-5">
+                    <div class="col-12 col-lg-6 text-center text-lg-start animate-on-scroll"
+                        data-animation="animate__fadeInLeft">
+                        <h2 class="display-4 fw-bold about-title">About us</h2>
+                        <p class="lead about-text">
+                            En CoderHub.run, creemos que la innovación es la clave para un futuro digital sin límites.
+                        </p>
+                        <blockquote class="blockquote fst-italic mt-4">
+                            <p class="quote-text">"El único modo de hacer un gran trabajo es amar lo que haces."</p>
+                            <footer class="blockquote-footer quote-author">Steve Jobs</footer>
+                        </blockquote>
+                    </div>
+                    <div class="col-12 col-lg-6 d-flex justify-content-center animate-on-scroll"
+                        data-animation="animate__fadeInRight">
+                        <div class="card story-card-mod">
+                            <div class="border-card"></div>
+                            <div class="content-card">
+                                <div class="text-front">Nuestra Historia</div>
+                                <div class="text-back">
+                                    <p>
+                                        Fundada en 2018 por un grupo de entusiastas de la tecnología con la simple idea
+                                        de democratizar el desarrollo web, CoderHub.run nació en un pequeño garaje en
+                                        Silicon Valley. Lo que comenzó como un proyecto para ayudar a pequeñas empresas
+                                        a construir su presencia online, rápidamente se convirtió en una agencia digital
+                                        de servicio completo. Con cada línea de código y cada proyecto, nos hemos
+                                        enfocado en no solo satisfacer las necesidades de nuestros clientes, sino en
+                                        superarlas, impulsando su crecimiento y transformando sus ideas en realidades
+                                        digitales. Hoy, CoderHub.run es sinónimo de innovación, calidad y resultados
+                                        tangibles.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row text-center mb-5">
+                    <h3 class="display-5 fw-bold mb-5 pulsate-text">Nuestra Identidad</h3>
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 animate-on-scroll" data-animation="animate__zoomIn">
+                        <div class="identity-card mission-card">
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold" style="color: #EFFBDB;">Misión</h4>
+                                <p class="card-text" style="color: #EFFBDB;">
+                                    Transformar ideas en soluciones digitales innovadoras y funcionales, creando
+                                    un impacto positivo en el crecimiento de nuestros clientes y en la industria
+                                    tecnológica.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 animate-on-scroll" data-animation="animate__zoomIn">
+                        <div class="identity-card vision-card">
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold">Visión</h4>
+                                <p class="card-text">
+                                    Ser la agencia líder en desarrollo web, reconocida por nuestra excelencia
+                                    técnica, creatividad y el valor que aportamos a cada proyecto.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 animate-on-scroll" data-animation="animate__zoomIn">
+                        <div class="identity-card values-card">
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold" style="color: #EFFBDB;">Valores</h4>
+                                <ul class="list-unstyled card-text text-start">
+                                    <li><i class="fas fa-arrow-alt-circle-right me-2"></i> Innovación Constante</li>
+                                    <li><i class="fas fa-arrow-alt-circle-right me-2"></i> Excelencia Técnica</li>
+                                    <li><i class="fas fa-arrow-alt-circle-right me-2"></i> Integridad y Transparencia
+                                    </li>
+                                    <li><i class="fas fa-arrow-alt-circle-right me-2"></i> Colaboración Creativa</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-section py-5 text-center">
+                    <h3 class="display-5 fw-bold mb-5 team-title pulsate-text">Nuestro Equipo</h3>
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6 col-lg-4 mb-4 animate-on-scroll" data-animation="animate__zoomIn">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="./img/istockphoto-1456207019-1024x1024.jpg" alt="Miembro 1"
+                                            class="img-fluid rounded-circle member-image">
+                                        <h4 class="mt-3">Juan Pérez Gómez</h4>
+                                        <p>CEO y Fundador</p>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h4>Juan Pérez Gómez</h4>
+                                        <p>CEO y Fundador</p>
+                                        <p>Ingeniero de software con más de 10 años de experiencia, lidera la visión y
+                                            estrategia tecnológica de CoderHub.run.</p>
+                                        <a href="perfil1.html" class="btn btn-outline-light mt-3 profile-btn">Ver
+                                            perfil</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-4 animate-on-scroll" data-animation="animate__zoomIn">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="./img/istockphoto-1307271542-1024x1024.jpg" alt="Miembro 2"
+                                            class="img-fluid rounded-circle member-image">
+                                        <h4 class="mt-3">Ana Gómez Pérez</h4>
+                                        <p>Directora de Diseño</p>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h4>Ana Gómez Pérez</h4>
+                                        <p>Directora de Diseño</p>
+                                        <p>Experta en UX/UI, con una pasión por crear interfaces intuitivas y
+                                            visualmente atractivas.</p>
+                                        <a href="pefil2.html" class="btn btn-outline-light mt-3 profile-btn">Ver
+                                            perfil</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-4 animate-on-scroll" data-animation="animate__zoomIn">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="./img/istockphoto-1295262540-1024x1024.jpg" alt="Miembro 3"
+                                            class="img-fluid rounded-circle member-image">
+                                        <h4 class="mt-3">Luis Torres Pérez</h4>
+                                        <p>Jefe de Desarrollo</p>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h4>Luis Torres Pérez</h4>
+                                        <p>Jefe de Desarrollo</p>
+                                        <p>Full-stack developer con un enfoque en la eficiencia y la optimización de
+                                            código, siempre buscando la solución más innovadora.</p>
+                                        <a href="perfil3.html" class="btn btn-outline-light mt-3 profile-btn">Ver
+                                            perfil</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <section id="servicios">
+            <div class="container py-5">
+                <h2 class="text-center display-4 mb-5 seccion-titulo animate__animated" id="services-title">Nuestros
+                    Servicios</h2>
+                <div class="row">
+                    <div class="col-md-3">
+                        <ul class="nav-servicios d-none d-md-block">
+                            <li class="nav-item" data-target="#desarrollo-web">
+                                <a class="nav-link" href="#desarrollo-web">
+                                    <span class="circulo"></span>
+                                    <span class="texto">Desarrollo Web</span>
+                                </a>
+                            </li>
+                            <li class="nav-item" data-target="#apps-moviles">
+                                <a class="nav-link" href="#apps-moviles">
+                                    <span class="circulo"></span>
+                                    <span class="texto">Apps Móviles</span>
+                                </a>
+                            </li>
+                            <li class="nav-item" data-target="#consultoria">
+                                <a class="nav-link" href="#consultoria">
+                                    <span class="circulo"></span>
+                                    <span class="texto">Consultoría</span>
+                                </a>
+                            </li>
+                            <li class="nav-item" data-target="#soporte">
+                                <a class="nav-link" href="#soporte">
+                                    <span class="circulo"></span>
+                                    <span class="texto">Soporte Técnico</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-9 servicios-column">
+                        <div id="desarrollo-web" class="card-servicio-container">
+                            <div class="card-interior">
+                                <h3 class="card-title">Desarrollo Web</h3>
+                                <div class="card-content">
+                                    <img src="./img/logojava.png" alt="Desarrollo Web"
+                                        class="img-servicio animate__animated animate__pulse animate__infinite">
+                                    <div class="parrafo-container">
+                                        <p class="card-text">En CoderHub.run, construimos experiencias digitales a la
+                                            medida. Nos especializamos en el desarrollo de sitios web y aplicaciones web
+                                            progresivas (PWA) que no solo son visualmente atractivas, sino que también
+                                            son
+                                            rápidas, seguras y altamente escalables. Utilizamos tecnologías de
+                                            vanguardia
+                                            como HTML5, CSS3, JavaScript, React, Angular y Vue.js para garantizar que tu
+                                            plataforma sea robusta y esté preparada para el futuro.</p>
+                                        <p class="card-text parrafo-offset">Nuestro proceso de desarrollo se centra en
+                                            el
+                                            rendimiento y la accesibilidad, asegurando que cada proyecto cumpla con los
+                                            más
+                                            altos estándares de calidad. Desde la conceptualización hasta el
+                                            lanzamiento,
+                                            nuestro equipo trabaja en estrecha colaboración contigo para transformar tu
+                                            visión en una solución funcional y eficiente, optimizada para todos los
+                                            dispositivos.</p>
+                                    </div>
+                                </div>
+                                <span class="letra-flotante">D</span>
+                            </div>
+                        </div>
+
+                        <div id="apps-moviles" class="card-servicio-container">
+                            <div class="card-interior">
+                                <h3 class="card-title">Apps Móviles</h3>
+                                <div class="card-content">
+                                    <img src="./img/logoApps.png" alt="Apps Móviles"
+                                        class="img-servicio animate__animated animate__pulse animate__infinite">
+                                    <div class="parrafo-container">
+                                        <p class="card-text">En un mundo cada vez más móvil, una aplicación es la clave
+                                            para
+                                            conectar con tu audiencia. Desarrollamos aplicaciones nativas para iOS y
+                                            Android, así como soluciones multiplataforma que reducen costos y tiempos de
+                                            desarrollo. Nos enfocamos en crear interfaces de usuario intuitivas y
+                                            atractivas, garantizando una experiencia fluida y memorable.</p>
+                                        <p class="card-text parrafo-offset">Cada una de nuestras aplicaciones está
+                                            diseñada
+                                            para ofrecer un alto rendimiento y funcionalidad, integrando características
+                                            avanzadas como notificaciones push, geolocalización, y pagos móviles. Si tu
+                                            objetivo es aumentar la participación del cliente, mejorar la productividad
+                                            interna
+                                            o lanzar un nuevo producto, estamos aquí para convertir tu idea en una
+                                            aplicación
+                                            funcional y exitosa.</p>
+                                    </div>
+                                </div>
+                                <span class="letra-flotante">A</span>
+                            </div>
+                        </div>
+
+                        <div id="consultoria" class="card-servicio-container">
+                            <div class="card-interior">
+                                <h3 class="card-title">Consultoría</h3>
+                                <div class="card-content">
+                                    <img src="./img/logoWimdo.png" alt="Consultoría"
+                                        class="img-servicio animate__animated animate__pulse animate__infinite">
+                                    <div class="parrafo-container">
+                                        <p class="card-text">Ofrecemos un servicio de consultoría tecnológica diseñado
+                                            para
+                                            ayudarte a tomar decisiones estratégicas informadas. Nuestro equipo de
+                                            expertos
+                                            te guiará en la selección de las tecnologías adecuadas, la definición de la
+                                            arquitectura de software y la planificación de la hoja de ruta de tu
+                                            proyecto.
+                                            Realizamos análisis de viabilidad, estudios de mercado y evaluaciones de
+                                            riesgos
+                                            para asegurar que tu inversión tecnológica sea exitosa.</p>
+                                        <p class="card-text parrafo-offset">Desde la optimización de procesos hasta la
+                                            implementación de nuevas soluciones, trabajamos contigo para alinear tus
+                                            objetivos de negocio con una estrategia tecnológica sólida. Nuestro enfoque
+                                            proactivo y personalizado te permitirá superar desafíos, identificar
+                                            oportunidades
+                                            y mantener una ventaja competitiva en el mercado.</p>
+                                    </div>
+                                </div>
+                                <span class="letra-flotante">C</span>
+                            </div>
+                        </div>
+
+                        <div id="soporte" class="card-servicio-container">
+                            <div class="card-interior">
+                                <h3 class="card-title">Soporte Técnico</h3>
+                                <div class="card-content">
+                                    <img src="./img/logosoporte.png" alt="Soporte Técnico"
+                                        class="img-servicio animate__animated animate__pulse animate__infinite">
+                                    <div class="parrafo-container">
+                                        <p class="card-text">La continuidad de tu negocio es nuestra prioridad.
+                                            Ofrecemos un
+                                            servicio de soporte técnico integral para mantener tus sistemas funcionando
+                                            de
+                                            manera óptima en todo momento. Nuestro equipo está disponible para resolver
+                                            cualquier problema técnico, realizar actualizaciones de seguridad y
+                                            garantizar
+                                            que tu infraestructura tecnológica sea robusta y confiable.</p>
+                                        <p class="card-text parrafo-offset">Además del soporte reactivo, también
+                                            brindamos
+                                            mantenimiento proactivo para prevenir futuros inconvenientes. Monitoreamos
+                                            el
+                                            rendimiento de tus plataformas, aplicamos parches y realizamos copias de
+                                            seguridad
+                                            de forma regular para proteger tus datos. Con nuestro servicio de soporte,
+                                            puedes
+                                            tener la tranquilidad de que tus sistemas están en buenas manos,
+                                            permitiéndote
+                                            concentrarte en lo que realmente importa: tu negocio.</p>
+                                    </div>
+                                </div>
+                                <span class="letra-flotante">S</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="portafolio" style="background-color: transparent;">
+            <div class="container text-center">
+                <h2 class="display-4 fw-bold mb-5" style="color: var(--color-principal);">Mi Portafolio</h2>
+                <p class="lead" style="color: var(--color-principal);">Echa un vistazo a algunos de mis proyectos más
+                    recientes.</p>
+
+                <div class="carousel-container mt-5">
+                    <div class="carousel-track">
+                        <div class="project-card">
+                            <img src="./img/Casa.gif" class="card-img-top mb-3 rounded" alt="Imagen del proyecto 1">
+                            <div class="card-body">
+                                <h5 class="card-title fs-4" style="color: var(--color-secundario);">Eco-Tech Solutions
+                                </h5>
+                                <p class="card-text text-muted" style="color: var(--color-fondo);">Una aplicación web
+                                    para monitorear el consumo de energía en hogares y oficinas. Creada con React y
+                                    Node.js.</p>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <img src="./img/hamburguesa.gif" class="card-img-top mb-3 rounded"
+                                alt="Imagen del proyecto 2">
+                            <div class="card-body">
+                                <h5 class="card-title fs-4" style="color: var(--color-secundario);">Gourmet Explorer
+                                </h5>
+                                <p class="card-text text-muted" style="color: var(--color-fondo);">Una plataforma social
+                                    para que los amantes de la gastronomía descubran y compartan recetas exclusivas.
+                                    Desarrollada con Python y Django.</p>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <img src="./img/estres.gif" class="card-img-top mb-3 rounded" alt="Imagen del proyecto 3">
+                            <div class="card-body">
+                                <h5 class="card-title fs-4" style="color: var(--color-secundario);">Mindful Moments App
+                                </h5>
+                                <p class="card-text text-muted" style="color: var(--color-fondo);">Una aplicación móvil
+                                    para la meditación guiada y la gestión del estrés. Diseñada para iOS y Android con
+                                    Flutter.</p>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <img src="./img/editor-de-fotos.gif" class="card-img-top mb-3 rounded"
+                                alt="Imagen del proyecto 4">
+                            <div class="card-body">
+                                <h5 class="card-title fs-4" style="color: var(--color-secundario);">Pixel Art Studio
+                                </h5>
+                                <p class="card-text text-muted" style="color: var(--color-fondo);">Un editor de gráficos
+                                    online que permite a los usuarios crear, guardar y compartir su propio pixel art.
+                                    Usando HTML Canvas y JavaScript puro.</p>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <img src="./img/nave-espacial.gif" class="card-img-top mb-3 rounded"
+                                alt="Imagen del proyecto 5">
+                            <div class="card-body">
+                                <h5 class="card-title fs-4" style="color: var(--color-secundario);">Space Journey</h5>
+                                <p class="card-text text-muted" style="color: var(--color-fondo);">Un videojuego 2D con
+                                    temática espacial donde el jugador debe pilotar su nave por una serie de obstáculos.
+                                    Construido con Godot Engine.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center mt-4">
+                        <button id="prev-btn" class="btn btn-primary btn-lg rounded-circle me-3">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button id="next-btn" class="btn btn-primary btn-lg rounded-circle">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="contacto">
+            <div class="container py-5">
+                <h2 class="text-center mb-5 animate__animated animate__fadeInDown">Contáctanos</h2>
+
+                <div class="row">
+                    <div class="col-lg-6 mb-5 animate__animated animate__fadeInUp">
+                        <form id="contact-form" class="needs-validation" novalidate>
+                            <div class="alert alert-success d-none" role="alert" id="success-message">
+                                ¡Mensaje enviado con éxito! 🚀
+                            </div>
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <label for="fullName" class="form-label">Nombre completo *</label>
+                                    <input type="text" class="form-control" id="fullName" required>
+                                    <div class="invalid-feedback">
+                                        Por favor, ingresa tu nombre completo.
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">E-mail *</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                    <div class="invalid-feedback">
+                                        Por favor, ingresa un correo electrónico válido.
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="subject" class="form-label">Asunto</label>
+                                    <input type="text" class="form-control" id="subject">
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Mensaje *</label>
+                                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                                    <div class="invalid-feedback">
+                                        Por favor, escribe un mensaje.
+                                    </div>
+                                </div>
+                                <div class="col-12 form-check d-flex align-items-center mb-3">
+                                    <div class="form-check form-switch me-2">
+                                        <input class="form-check-input" type="checkbox" id="privacyPolicy" required>
+                                    </div>
+                                    <label class="form-check-label" for="privacyPolicy">
+                                        Acepto la <a href="#" class="text-decoration-underline"
+                                            style="color: var(--color-secundario);">política de privacidad</a>
+                                    </label>
+                                    <div class="invalid-feedback">
+                                        Debes aceptar la política de privacidad.
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary w-100">ENVIAR</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-6 mb-5 animate__animated animate__fadeInUp">
+                        <h3 class="text-center mb-4" style="color: var(--color-principal);">Nuestra Ubicación</h3>
+                        <div class="ratio ratio-16x9">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158858.182370712!2d-0.2416803875322982!3d51.52855824151748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondres%2C%20Reino%20Unido!5e0!3m2!1ses-419!2sco!4v1709405452243!5m2!1ses-419!2sco"
+                                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+    </main>
+    <footer class="footer py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white">Contacto</h5>
+                    <ul class="list-unstyled text-white-50">
+                        <li class="mb-2">
+                            <i class="fas fa-phone-alt me-2"></i>
+                            Teléfono: <a href="tel:312-345-6789"
+                                class="text-white-50 text-decoration-none">312-345-6789</a>
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-envelope me-2"></i>
+                            Correo: <a href="mailto:info@tudominio.com"
+                                class="text-white-50 text-decoration-none">info@tudominio.com</a>
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            Dirección: Calle Falsa 123, Ciudad
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 text-md-end">
+                    <h5 class="text-white">Síguenos</h5>
+                    <a href="#" class="social-icon me-3">
+                        <i class="fab fa-facebook-f fa-2x"></i>
+                    </a>
+                    <a href="#" class="social-icon me-3">
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                    <a href="#" class="social-icon me-3">
+                        <i class="fab fa-linkedin-in fa-2x"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+
+            <hr class="mt-4 mb-3" style="border-color: rgba(255, 255, 255, 0.2);">
+
+            <div class="text-center text-white-50">
+                <p class="mb-0">&copy; 2024 Tu Marca. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/java.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

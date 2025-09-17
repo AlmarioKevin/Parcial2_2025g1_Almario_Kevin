@@ -1,0 +1,253 @@
+.about-us-section {
+    color: #10212B;
+}
+
+.about-title,
+.about-text {
+    color: #10212B;
+}
+
+.quote-text {
+    color: #8F4464;
+}
+
+.quote-author {
+    color: #10212B;
+}
+
+.pulsate-text {
+    animation: pulsate 1.5s infinite ease-in-out;
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.02);
+        opacity: 0.9;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.story-card-mod {
+    width: 100%;
+    max-width: 600px;
+    height: 250px;
+    background: #10212B;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.border-card {
+    position: absolute;
+    inset: 0px;
+    border: 2px solid #bd9f67;
+    opacity: 0;
+    transform: rotate(10deg);
+    transition: all 0.5s ease-in-out;
+}
+
+.content-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    transition: transform 0.5s ease-in-out;
+}
+
+.text-front {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #EFFBDB;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.text-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    color: #EFFBDB;
+    padding: 2rem;
+    transition: opacity 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.text-back p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+.story-card-mod:hover {
+    transform: scale(1.05);
+}
+
+.story-card-mod:hover .border-card {
+    inset: 15px;
+    opacity: 1;
+    transform: rotate(0);
+}
+
+.story-card-mod:hover .text-front {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.story-card-mod:hover .text-back {
+    opacity: 1;
+}
+
+.team-section .team-title {
+    text-align: center;
+    color: #10212B;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    margin: auto;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.flip-card-front {
+    background-color: #10212B;
+    color: #EFFBDB;
+    z-index: 2;
+}
+
+.flip-card-front .member-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #8FA464;
+}
+
+.flip-card-back {
+    background-color: #8FA464;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back .profile-btn {
+    background-color: #EFFBDB;
+    border-color: #8FA464;
+    color: #8FA464;
+    transition: background-color 0.3s;
+}
+
+.flip-card-back .profile-btn:hover {
+    background-color: #8FA464;
+}
+
+.identity-card {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.identity-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.identity-card .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.identity-card .card-text {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.mission-card {
+    background-color: #10212B;
+    color : #EFFBDB;
+}
+
+.vision-card {
+    background-color: #8FA464;
+    color: #10212B;
+}
+
+.values-card {
+    background-color: #10212B;
+    color: #EFFBDB;
+}
+
+.values-card .list-unstyled li {
+    margin-bottom: 0.5rem;
+    color: #EFFBDB; 
+}
+
+@media (max-width: 768px) {
+    .story-card-mod {
+        height: 200px;
+    }
+    .text-back p {
+        font-size: 0.6rem;
+        line-height: 1.6;
+        margin: 0;
+    }
+}

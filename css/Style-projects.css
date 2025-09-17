@@ -1,0 +1,117 @@
+:root {
+    --color-principal: #10212B;
+    --color-secundario: #8FA464;
+    --color-fondo: #EFFBDB;
+}
+
+#portafolio {
+    background-color: transparent;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+.carousel-container {
+    overflow: hidden;
+    position: relative;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    height: 600px;
+}
+
+.carousel-track {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.project-card {
+    background-color: var(--color-principal);
+    color: var(--color-fondo);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out, box-shadow 0.3s ease-in-out, z-index 0s;
+    padding: 1.5rem;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.75);
+    opacity: 0.2;
+    z-index: 1;
+    height: 450px;
+}
+
+.project-card.active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    z-index: 3;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.project-card.prev {
+    opacity: 0.5;
+    transform: translate(-150%, -50%) scale(0.85);
+    z-index: 2;
+}
+
+.project-card.next {
+    opacity: 0.5;
+    transform: translate(50%, -50%) scale(0.85);
+    z-index: 2;
+}
+
+.project-card.active:hover {
+    transform: translate(-50%, -50%) scale(1.05);
+    box-shadow: 0 0 20px 5px var(--color-secundario);
+}
+
+.project-card .card-title {
+    color: var(--color-secundario);
+}
+
+.project-card .card-text {
+    color: #bbb !important;
+}
+
+.btn-primary {
+    background-color: var(--color-secundario);
+    border-color: var(--color-secundario);
+}
+
+.btn-primary:hover {
+    background-color: #799153;
+    border-color: #799153;
+}
+
+.container .display-4 {
+    margin-bottom: 1rem !important;
+}
+
+.container .lead {
+    margin-bottom: 2rem !important;
+}
+
+.project-card .card-img-top {
+    transition: transform 0.6s ease;
+    max-width: 50%;
+}
+
+.project-card.active .card-img-top {
+    animation: pulse-grow 4s ease-in-out infinite;
+}
+
+@keyframes pulse-grow {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

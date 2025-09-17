@@ -1,0 +1,90 @@
+#contacto {
+    padding: 5rem 0;
+}
+
+#contacto h2 {
+    color: var(--color-principal);
+    margin-bottom: 2rem;
+}
+
+#contact-form .form-label {
+    color: var(--color-principal);
+    font-weight: 500;
+}
+
+#contact-form .form-control,
+#contact-form .btn-secondary {
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: 1px solid #ced4da;
+    box-shadow: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+#contact-form .form-control:focus {
+    border-color: var(--color-secundario);
+    box-shadow: 0 0 0 0.25rem rgba(143, 164, 100, 0.25);
+}
+
+#contact-form .btn-primary {
+    background-color: var(--color-secundario);
+    border-color: var(--color-secundario);
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contact-form .btn-primary:hover {
+    background-color: #799153;
+    border-color: #799153;
+}
+
+#contact-form .btn-secondary {
+    background-color: #f8f9fa;
+    color: #495057;
+}
+
+.form-check-input:checked {
+    background-color: var(--color-secundario);
+    border-color: var(--color-secundario);
+}
+
+.form-switch .form-check-input {
+    width: 3em;
+}
+
+#contacto iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* FOOOOOOOOOOOOOOOOOOOOOOTER */
+
+.footer {
+    background-color: var(--color-principal);
+    color: #fff;
+}
+
+.footer h5 {
+    font-weight: 600;
+}
+
+.social-icon {
+    color: #fff;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    color: var(--color-secundario);
+    transform: scale(1.1);
+}
+
+.list-unstyled a:hover {
+    color: #fff !important;
+    text-decoration: underline !important;
+}
+
+.list-unstyled i {
+    color: var(--color-secundario);
+}

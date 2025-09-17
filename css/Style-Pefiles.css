@@ -1,0 +1,63 @@
+:root {
+    --color-principal: #10212B;
+    --color-secundario: #8FA464;
+    --color-claro: #EFFBDB;
+}
+
+body {
+    background-color: var(--color-principal);
+    color: var(--color-claro);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-brand {
+    color: var(--color-claro) !important;
+}
+
+.nav-link {
+    color: var(--color-claro) !important;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: var(--color-secundario) !important;
+}
+
+.display-4 {
+    color: var(--color-secundario);
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.lead {
+    color: var(--color-secundario);
+    font-style: italic;
+}
+
+.text-primary {
+    color: var(--color-secundario) !important;
+}
+
+hr.border-primary {
+    border-color: var(--color-secundario) !important;
+}
+
+.rounded-circle {
+    border: 5px solid var(--color-secundario);
+    box-shadow: 0 0 20px rgba(143, 164, 100, 0.7);
+    transition: transform 0.5s ease;
+}
+
+.rounded-circle:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    border-top: 1px solid var(--color-secundario) !important;
+}
+
+.badge.bg-primary {
+    background-color: var(--color-secundario) !important;
+    color: var(--color-principal) !important;
+    font-weight: bold;
+}
